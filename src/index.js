@@ -1,6 +1,6 @@
 const getResourse = async (url) => {
   const res = await fetch(url)
-  const body = res.json()
+  const body = await res.json()
   return body
 }
 
